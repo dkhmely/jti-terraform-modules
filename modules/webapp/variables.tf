@@ -62,3 +62,15 @@ variable "site_config" {
   type        = any
   default     = {}
 }
+
+variable "acr" {
+  description = "ACR id"
+  type        = string
+  default     = null
+}
+
+variable "kv" {
+  description = "Key vault id"
+  type        = string
+  default     = null
+}
