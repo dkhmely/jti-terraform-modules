@@ -45,11 +45,11 @@ variable "db_port" {
   default     = 3306
 }
 
-variable "vnet_integration" {
-  description = "Enable VNet integration for the web app"
-  type        = bool
-  default     = false
-}
+# variable "vnet_integration" {
+#   description = "Enable VNet integration for the web app"
+#   type        = bool
+#   default     = false
+# }
 
 variable "subnet_id" {
   description = "Subnet ID for VNet integration"
