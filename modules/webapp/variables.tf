@@ -63,13 +63,13 @@ variable "site_config" {
   default     = {}
 }
 
-variable "acr" {
+variable "acr_id" {
   description = "ACR id"
   type        = string
   default     = null
 }
 
-variable "kv" {
+variable "key_vault_id" {
   description = "Key vault id"
   type        = string
   default     = null
