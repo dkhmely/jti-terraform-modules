@@ -5,7 +5,7 @@ resource "azurerm_mysql_flexible_server" "this" {
   administrator_login    = "${var.db_user_prefix}${var.env}user"
   administrator_password = random_password.password.result
   backup_retention_days  = 7
-  private_dns_zone_id    = var.private_dns_zone_id
+  private_dns_zone_id    = azurerm_private_dns_zone.private_dns_zone.id
   sku_name               = var.sku_name
   zone                   = var.zone
 
