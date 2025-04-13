@@ -33,11 +33,6 @@ variable "key_vault_id" {
   description = "ID of the Key Vault to store password"
 }
 
-variable "secret_name" {
-  type        = string
-  description = "Name of the Key Vault secret"
-}
-
 variable "private_dns_zone_id" {
   type        = string
   description = "Private DNS zone ID for MySQL"
