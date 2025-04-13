@@ -19,6 +19,7 @@ resource "azurerm_mysql_flexible_server" "this" {
     ignore_changes = [private_dns_zone_id]
   }
 
+  depends_on = [azurerm_private_dns_zone_virtual_network_link.dns_virtual_link]
 }
 
 resource "azurerm_mysql_flexible_database" "this" {

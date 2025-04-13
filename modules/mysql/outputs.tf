@@ -7,5 +7,5 @@ output "admin_username" {
 }
 
 output "admin_creds" {
-  value     = azurerm_key_vault_secret.this.name
+  value = azurerm_key_vault_secret.this.name
 }

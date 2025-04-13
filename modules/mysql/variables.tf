@@ -50,23 +50,23 @@ variable "dns_virtual_link_depends_on" {
 }
 
 variable "sku_name" {
-  type        = string
-  default     = "B_Standard_B1ms"
+  type    = string
+  default = "B_Standard_B1ms"
 }
 
 variable "zone" {
-  type        = number
-  default     = 2
+  type    = number
+  default = 2
 }
 
 variable "password_length" {
-  type        = number
-  default     = 16
+  type    = number
+  default = 16
 }
 
 variable "override_special_chars" {
-  type        = string
-  default     = "!#$%&*()-_=+[]{}<>:?"
+  type    = string
+  default = "!#$%&*()-_=+[]{}<>:?"
 }
 
 variable "storage" {
