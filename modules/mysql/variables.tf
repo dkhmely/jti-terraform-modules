@@ -38,11 +38,6 @@ variable "vnet_id" {
   description = "ID of the vnet"
 }
 
-variable "private_dns_zone_id" {
-  type        = string
-  description = "Private DNS zone ID for MySQL"
-}
-
 variable "dns_virtual_link_depends_on" {
   description = "Dependency placeholder for DNS virtual network link"
   type        = list(any)
@@ -85,10 +80,5 @@ variable "storage" {
 
 variable "private_endpoint_subnet_id" {
   description = "Subnet ID for the MySQL private endpoint"
-  type        = string
-}
-
-variable "dns_zone_name" {
-  description = "Name of the private DNS zone"
   type        = string
 }
